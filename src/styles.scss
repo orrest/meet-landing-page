@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --cyan-600: #4D96A9;
+  --cyan-300: #8FE3F9;
+  --cyan-300-alpha: #4D96A9BF;
+  --purple-600: #855FB1;
+  --purple-300: #D9B8FF;
+  --slate-900: #28283D;
+  --slate-600: #87879D;
+  --slate-300: #D1D1DF;
+  --white: #FAFAFA;
+  
+  --spacing-50: 0.25rem;
+  --spacing-100: 0.5rem;
+  --spacing-200: 1rem;
+  --spacing-400: 2rem;
+  --spacing-500: 2.5rem;
+  --spacing-600: 3rem;
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1400: 7rem;
+  --spacing-1500: 7.5rem;
+
+  font-size: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  max-inline-size: 100vw;
+  min-block-size: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+.text-preset-1 {
+  font-family: "Red Hat Display", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: clamp(2.5rem, 1.97rem + 2.25vw, 4rem);
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
+.text-preset-2 {
+  font-family: "Red Hat Display", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: clamp(2rem, 1.82rem + 0.75vw, 2.5rem);
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
+.text-preset-3 {
+  font-family: "Red Hat Display", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: clamp(0.75rem, 0.66rem + 0.376vw, 1rem);
+  line-height: 110%;
+  letter-spacing: 0.25rem;
+}
+
+.text-preset-4 {
+  font-family: "Red Hat Display", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: clamp(1rem, 0.96rem + 0.19vw, 1.13rem);
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.text-preset-5 {
+  font-family: "Red Hat Display", serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 150%;
+  letter-spacing: 0;
+}

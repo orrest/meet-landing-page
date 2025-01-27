@@ -1,0 +1,62 @@
+@let para1Header = 'Group Chat for Everyone';
+@let para1 = 'Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.';
+@let version = 'v1.3';
+@let para2Header1 = 'Smarter meetings, all in one place';
+@let para2Header2 = 'Built for modern use'.toUpperCase();
+@let para2 = 'Send messages, share files, show your screen, and record your meetings ' +
+'— all in one workspace. Control who can join with invite-only team access, ' +
+'data encryption, and data export.';
+@let para3Header = 'Experience more together';
+@let para3 = 'Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.';
+
+<main>
+  <header>
+    <img src="../../assets/logo.svg" alt="logo" width="119" height="28">
+  </header>
+  <section class="group-chat">
+    <div class="main-pic">
+      <picture>
+        <source srcset="../../assets/tablet/image-hero.png" width="820" height="303" media="(max-width: 52em)">
+        <img src="../../assets/desktop/image-hero-left.png" width="394" height="303" alt="left-avatars">
+      </picture>
+    </div>
+    <div class="content">
+      <h1 class="text-preset-1">{{ para1Header }}</h1>
+      <p class="text-preset-4">{{ para1 }}</p>
+      <div class="btns">
+        <app-button text="Download" subText="{{ version }}" backgroundColor="var(--cyan-600)" textColor="var(--white)"
+          hoverBackgroundColor="#71C0D4" subTextColor="var(--cyan-300)"></app-button>
+        <app-button text="What is it?" backgroundColor="var(--purple-600)" textColor="var(--white)"
+          hoverBackgroundColor="#B18BDD"></app-button>
+      </div>
+    </div>
+    <div class="sub-pic">
+      <img src="../../assets/desktop/image-hero-right.png" width="394" height="303" alt="right-avatars">
+    </div>
+  </section>
+  <section class="number-one">
+    <app-number numberText="01"></app-number>
+    <div class="pics">
+      <img src="../../assets/desktop/image-woman-in-videocall.jpg" width="510" height="484"
+        alt="image-woman-in-videocall">
+      <img src="../../assets/desktop/image-women-videochatting.jpg" width="510" height="484"
+        alt="image-women-videochatting">
+      <img src="../../assets/desktop/image-men-in-meeting.jpg" width="510" height="484" alt="image-men-in-meeting">
+      <img src="../../assets/desktop/image-man-texting.jpg" width="510" height="484" alt="image-man-texting">
+    </div>
+    <div class="content">
+      <h2 class="text-preset-3">{{ para2Header2 }}</h2>
+      <h1 class="text-preset-2">{{ para2Header1 }}</h1>
+      <p class="text-preset-4">{{ para2 }}</p>
+    </div>
+  </section>
+  <section class="number-two">
+    <app-number numberText="02"></app-number>
+    <div class="content">
+      <h1 class="text-preset-2">{{ para3Header }}</h1>
+      <p class="text-preset-4">{{ para3 }}</p>
+      <app-button text="Download" subText="{{ version }}" backgroundColor="var(--purple-600)" textColor="var(--white)"
+        subTextColor="var(--purple-300)" hoverBackgroundColor="#B18BDD"></app-button>
+    </div>
+  </section>
+</main>
